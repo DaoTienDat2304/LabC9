@@ -7,15 +7,23 @@ public static class HighScorePrefs
 
     public static int Get()
     {
-        return PlayerPrefs.GetInt(Key, 0);
+        int value = PlayerPrefs.GetInt(Key, 0);
+        Debug.Log($"[Lab3] Get HighScore = {value}");
+        return value;
     }
 
     public static void TrySave(int score)
     {
-        if (score > Get())
+        int current = PlayerPrefs.GetInt(Key, 0);
+        if (score > current)
         {
             PlayerPrefs.SetInt(Key, score);
             PlayerPrefs.Save();
+            Debug.Log($"[Lab3] Save HighScore: {current} -> {score}");
+        }
+        else
+        {
+            Debug.Log($"[Lab3] Keep HighScore: {current} (new score={score})");
         }
     }
 }

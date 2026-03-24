@@ -347,6 +347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a76caa045f6d984086ceea63f32919e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameConfig: {fileID: 11400000, guid: 425ad7c768c60d7428d31e45c565b182, type: 2}
 --- !u!4 &847792851
 Transform:
   m_ObjectHideFlags: 0
@@ -483,8 +484,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1a630a84c3a67a48bd7ce8dd1da722c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameConfig: {fileID: 11400000, guid: 425ad7c768c60d7428d31e45c565b182, type: 2}
   gameSceneName: Game
   scoreToPass: 100
+  scorePerClick: 10
+  currentScore: 0
+  playerName: Player1
 --- !u!4 &1265237411
 Transform:
   m_ObjectHideFlags: 0

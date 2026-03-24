@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxLives: 3
   moveSpeed: 5
+  scoreToPass: 444
+  scorePerClick: 50
